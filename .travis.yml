@@ -54,7 +54,7 @@ install:
     - hash -r
     - conda config --set always_yes yes --set changeps1 no
     - conda update -q conda
-    - conda install -c conda-forge mamba
+    - conda install -c conda-forge mamba==0.5.3
     - mamba install -c conda-forge xtensor xsimd
 script:
     - echo "Done"
